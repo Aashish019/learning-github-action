@@ -49,3 +49,16 @@ Steps in a Job:
 Parrallel Run:
 
 -   in a workflow we can have many of theis job each job is going to run on diff machine and they dont actually depend on each other and therfor they can run parallel
+
+Interview Questions:
+
+-   I have a repository which containe a workflow, when ever i run a workflow i need to get a debugging log all the time how can you get that
+    Ans: goes to secrets > actions > variables
+    ACTIONS_STEP_DEBUG = true
+    it enable debug log when we try to rerun the job
+    ACTIONS_RUNNER_DEBUG = true
+    this will will give you more additional log to you
+
+-   I have a repository with a workflow now i want to update a configuration but i don't want to run a workflow for a specific commit
+
+*   when we commit use like "hello [actions skip]" / [skip ci/ci] / [skip/np] / [ci/skip]

@@ -26,3 +26,12 @@ jobs:
               run: |
                   echo "This is a shell script on parallel"
                   echo "Parallel job"
+    depend-job-cmd:
+        runs-on: ubuntu-latest
+        needs: shell-commands #depending on first shell-commands job
+        steps:
+            - uses: actions/checkout@v2
+            - name: Multiple commands
+              run: |
+                  echo "This is a shell script on depends-on"
+                  echo "This only work on shell-commamd-job"

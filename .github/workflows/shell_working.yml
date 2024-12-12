@@ -1,5 +1,9 @@
 name: working directory
 on: [push]
+defaults:
+    run:
+        shell: bash
+        working-directory: /github/workspace
 jobs:
     display:
         runs-on: ubuntu-latest
@@ -11,3 +15,13 @@ jobs:
                   echo $GITHUB_SHA
                   echo $GITHUB_REPOSITORY
                   echo $GITHUB_WORKSPACE
+    display_proc:
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                shell: python
+        steps:
+            - name: displaying proc
+              run: |
+                  import platform
+                  print(platform.processor())

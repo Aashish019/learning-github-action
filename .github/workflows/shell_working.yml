@@ -3,7 +3,7 @@ on: [push]
 defaults:
     run:
         shell: bash
-        working-directory: /opt/github/workspace
+        # working-directory: /opt/github/workspace
 jobs:
     display:
         runs-on: ubuntu-latest

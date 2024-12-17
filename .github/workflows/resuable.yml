@@ -4,7 +4,7 @@ on:
     workflow_call:
         inputs:
             test-input-variable:
-                required: true
+                # required: true
                 type: string
                 default: "Github Action"
 

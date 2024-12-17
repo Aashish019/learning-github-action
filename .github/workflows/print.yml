@@ -1,4 +1,4 @@
-name: Node.js CI
+name: module check
 
 on: [push, workflow_dispatch]
 
@@ -8,7 +8,8 @@ jobs:
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4
-            - name: Greeting
-              uses: ./.github/workflows/resuable.yml
+    call-workflow-passing-input:
+        uses:
+            ./.github/workflows/resuable.yml
             #   with:
             #       test-input-variable: "Aashish"

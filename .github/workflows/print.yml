@@ -9,6 +9,6 @@ jobs:
             - name: Checkout repository
               uses: actions/checkout@v4
             - name: Greeting
-              uses: ./.github/workflows/reusable.yml
+              uses: ./.github/workflows/resuable.yml
             #   with:
             #       test-input-variable: "Aashish"

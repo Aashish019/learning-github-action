@@ -18,15 +18,17 @@ jobs:
               run: |
                   cd 04-using-action/react-app
                   npm run test
-            - name: npm build
-              run: |
-                  cd 04-using-action/react-app
-                  npm run build
-            - name: set github username and email
-              run: |
-                  git config --global user.name "Aashi Actions"
-                  git config --global user.email "aashishanil321@gmail.com"
-            - name: Deploy
-              run: |
-                  cd 04-using-action/react-app
-                  npm run deploy
+            - name: Build and Deploy React app to GitHub Pages
+              uses: omkartapale/react-deployment-gh-pages@v1.0.0
+            # - name: npm build
+            #   run: |
+            #       cd 04-using-action/react-app
+            #       npm run build
+            # - name: set github username and email
+            #   run: |
+            #       git config --global user.name "Aashi Actions"
+            #       git config --global user.email "aashishanil321@gmail.com"
+            # - name: Deploy
+            #   run: |
+            #       cd 04-using-action/react-app
+            #       npm run deploy

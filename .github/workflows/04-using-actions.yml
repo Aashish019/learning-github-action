@@ -14,3 +14,7 @@ jobs:
               run: |
                   cd 04-using-action/react-app
                   npm ci
+            - name: Run Unit Tests
+              run: |
+                  cd 04-using-action/react-app
+                  npm run test

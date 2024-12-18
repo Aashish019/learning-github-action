@@ -1,6 +1,6 @@
 name: 01-Buiding-Blocks
 
-on: [push, workflow_dispatch]
+on: [workflow_dispatch]
 
 jobs:
     echo-hello:
@@ -13,7 +13,7 @@ jobs:
         steps:
             - name: Goodbye
               run: |
-                  ech "i will fail"
-                  exit 0
+                  echo "i will fail with exit 1"
+                  exit 1
             - name: Goodbye
               run: echo "Goodbye!"

@@ -23,9 +23,14 @@ jobs:
                   cd 04-using-action/react-app
                   npm run build
             - name: set github username and email
+              shell: bash
               run: |
-                  git config user.name "Aashi Actions"
-                  git config user.email "aashishanil321@gmail.com"
+                  git config user.name "github-actions"
+                  git config user.email "github-actions@github.com"
+                  git --work-tree build add --all
+                  git commit -m "Automatic Build and Deploy run by GitHub Actions"
+                  git push origin HEAD:gh-pages --force
+
             - name: Deploy
               run: |
                   cd 04-using-action/react-app

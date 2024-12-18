@@ -7,19 +7,22 @@ jobs:
             - name: Show OS
               run: |
                   echo "This job is running on an Ubuntu runner"
-                  uname -a
-                  cat /etc/os-release
+                  echo "Runner os is $RUNNER_OS"
+              #   uname -a
+              #   cat /etc/os-release
     windows-echo:
         runs-on: windows-latest
         steps:
             - name: Show OS
               run: |
                   echo "This job is running on a Windows runner"
-                  ver
+                  echo "Runner os is $RUNNER_OS"
+              #   ver
     mac-echo:
         runs-on: macos-latest
         steps:
             - name: Show OS
               run: |
                   echo "This job is running on a MacOS runner"
-                  sw_vers
+                  echo "Runner os is $RUNNER_OS"
+              #   sw_vers

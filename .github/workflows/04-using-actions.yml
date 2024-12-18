@@ -18,3 +18,11 @@ jobs:
               run: |
                   cd 04-using-action/react-app
                   npm run test
+            - name: npm build
+              run: |
+                  cd 04-using-action/react-app
+                  npm run build
+            - name: Deploy
+              run: |
+                  cd 04-using-action/react-app
+                  npm run deploy

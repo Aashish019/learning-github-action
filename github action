@@ -69,3 +69,5 @@ events: push, pull, issue
 -   I have a repository with a workflow now i want to update a configuration but i don't want to run a workflow for a specific commit
 
 *   when we commit use like "hello [actions skip]" / [skip ci/ci] / [skip/np] / [ci/skip]
+
+

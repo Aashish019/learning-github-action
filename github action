@@ -73,3 +73,18 @@ events: push, pull, issue
 # i have a workflow which basically need to run which is based on the another workflow how can you do this
 
 -   to trigger a workflow to run based on the execution of another workflow can be done using an event called workflow_run
+
+# filtering out workflow run based on our branch tag and path
+
+-   it will work inc rule ways
+
+# there are 3 branches in your workflow , i want to work this workflow excluding dev and uat branches
+
+branches-ignore:
+
+-   dev
+-   uat
+
+# i want to manually run the workflow
+
+-   workflow_dispatch

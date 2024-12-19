@@ -70,4 +70,6 @@ events: push, pull, issue
 
 *   when we commit use like "hello [actions skip]" / [skip ci/ci] / [skip/np] / [ci/skip]
 
+# i have a workflow which basically need to run which is based on the another workflow how can you do this
 
+-   to trigger a workflow to run based on the execution of another workflow can be done using an event called workflow_run

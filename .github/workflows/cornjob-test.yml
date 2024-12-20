@@ -2,6 +2,7 @@ name: corn job
 on:
     schedule:
         - cron: "* * * * *"
+    workflow_dispatch:
 jobs:
     cornjob:
         runs-on: ubuntu-latest

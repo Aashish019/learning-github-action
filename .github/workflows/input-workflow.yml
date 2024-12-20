@@ -1,0 +1,16 @@
+name: input workflow
+
+on:
+    workflow_dispatch:
+        inputs:
+            name:
+                description: "Input for the workflow"
+                required: true
+                type: string
+                default: "Github Action"
+
+jobs:
+    reusable_workflow_job:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Hi i am  ${{ inputs.name}}"

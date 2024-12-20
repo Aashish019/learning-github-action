@@ -4,6 +4,7 @@ on:
         types: [closed]
         branches:
             - main
+    workflow_dispatch:
 jobs:
     echo_to_the_workflow:
         runs-on: ubuntu-latest

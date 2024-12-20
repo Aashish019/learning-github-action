@@ -11,3 +11,8 @@ jobs:
               run: |
                   echo "corn job running every 1 minutes"
                   echo "Current time: $(date)"
+
+            - name: Show the trigger
+              run: |
+                  echo "Event name: ${{ github.event_name }}"
+                  echo "Event name: $GITHUB_EVENT_NAME"

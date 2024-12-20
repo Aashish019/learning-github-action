@@ -88,3 +88,35 @@ branches-ignore:
 # i want to manually run the workflow
 
 -   workflow_dispatch
+
+# input variables
+
+-   input variable
+
+# 2nd workflow using diff events
+
+name: workflow events
+trigger push
+echo:
+ubuntu
+show the trigger
+type of the name of the event that trigger workflow
+
+adde more event
+pull_request
+schedule
+workflow_dispatcg
+
+on schedule
+
+-   cron: '<cron expression>'
+
+# /05 event filter and activity tyoe
+
+name: event filter and activity type
+trigger pull_req
+restrict the ativity only
+opened and syncronize
+use event filter to restric the workflow run to be only by change in main brach
+job echo to the workflow
+Running whenever a PR is opened or syncronized AND basr branch is main

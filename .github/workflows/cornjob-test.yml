@@ -1,0 +1,12 @@
+name: corn job
+on:
+    schedule:
+        - cron: "* * * * *"
+jobs:
+    cornjob:
+        runs-on: ubuntu-latest
+        steps:
+            - name: test job
+              run: |
+                  echo "corn job running every 1 minutes"
+                  echo "Current time: $(date)"

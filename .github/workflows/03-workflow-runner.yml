@@ -10,6 +10,7 @@ jobs:
                   echo "Runner os is $RUNNER_OS"
               #   uname -a
               #   cat /etc/os-release
+              #test
     windows-echo:
         runs-on: windows-latest
         steps:
